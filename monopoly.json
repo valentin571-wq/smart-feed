@@ -1,0 +1,29 @@
+{
+  "currency": "lei",
+  "rooms": {
+    "1": {
+      "name": "Single Comfort",
+      "price": 200
+    },
+    
+    
+    
+    
+    "2": {
+      "name": "Double Matrimoniala",
+      "price": 250
+    },
+    
+     "3": {
+      "name": "Double twin",
+      "price": 250
+    },
+    
+    
+    
+    "4": {
+      "name": "Triple Premium",
+      "price": 300
+    }
+  }
+}
