@@ -377,7 +377,7 @@ fetch(`https://valentin571-wq.github.io/smart-feed/${HOTEL_ID}.json`)
   try {
 
     const res = await fetch(
-      "https://valentin571-wq.github.io/smart-feed/bootstrap.php?hotel=" + hotel,
+      "https://valentin571-wq.github.io/smart-feed/bootstrap.json?hotel=" + hotel,
       { cache: "no-store" }
     );
 
@@ -489,6 +489,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
 
 
 
