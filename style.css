@@ -1,0 +1,1013 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+:root{
+  --bg:#0b1220;
+  --card:#7D5A2A;
+  --card1:#ffffff;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --accent:#38bdf8;
+  --gold:#b98a49;
+  --shadow: 0 18px 45px rgba(111,78,39,.22);
+  --gold-dark:#8e622e;
+  --radius:22px;
+}
+
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden}
+body{
+  font-family:Inter,system-ui,Arial;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ================= HEADER NOU ================= */
+.header{
+  position:relative;
+  min-height:92vh;
+  min-height:92svh;
+  padding:120px 20px 80px;
+  background:linear-gradient(180deg,rgba(2,6,23,.85),rgba(11,18,32,.95));
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+
+
+/* overlay + blur */
+.header::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:-1px;
+  left:0;
+  background: linear-gradient(120deg, rgba(33,26,19,.8), rgba(78,59,34,.45));
+  z-index:0;
+  pointer-events:none;
+}
+
+.header > *{
+  position:relative;
+  z-index:1;
+}
+
+.header-inner{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:48px;
+  align-items:center;
+}
+
+@media (min-width: 1024px){
+  .header-inner{
+    grid-template-columns: 1.35fr 0.55fr;
+  }
+}
+
+
+.header-badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  background: rgba(212, 175, 55, 0.15);
+  color:#ffffff;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.header h1{
+  font-size:clamp(42px,6vw,68px);
+  margin:0 0 18px;
+}
+
+.header p{
+  font-size:18px;
+  color:#ffffff;
+  max-width:520px;
+}
+
+.header-actions{
+  margin-top:28px;
+  display:flex;
+  gap:14px;
+}
+
+.header-actions a{
+  padding:14px 22px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn-primary{ background: var(--gold); color:#fff; }
+
+
+.btn-secondary{
+  border:1px solid rgba(255,255,255,.2);
+  color:var(--text);
+}
+
+.header-card{
+  background:rgba(15,23,42,.35);
+  backdrop-filter:blur(14px);
+  border-radius:20px;
+  padding:15px 15px;
+  .header-card{
+  border:0.5px solid rgba(255,255,255,.05);
+}
+
+}
+
+.header-card ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:14px;
+}
+
+.header-card li{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+  gap:12px;
+  align-items:flex-start;
+
+  color:#b98a49;
+}
+
+@media (min-width: 1024px){
+  .header-card{
+    padding:14px 16px;
+  }
+}
+
+
+.header-card strong{color:var(--text)}
+
+/* ================= BOOKING BAR ================= */
+.booking-bar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:#fff8f1;
+  backdrop-filter:blur(14px);
+  padding:12px 0;
+ 
+}
+
+.header-actions a{
+  padding:14px 20px;     /* mai mici */
+  font-size:14px;
+  border-radius:12px;
+}
+
+
+
+.booking-grid{
+  display:flex !important;     /* ignoră complet grid-ul */
+  gap:12px;
+  align-items:flex-end;
+  justify-content:center;
+  max-width:500px;
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+/* DESKTOP / TABLET */
+.booking-grid{
+  max-width:500px;
+  margin:0 auto;
+  justify-items:center;
+}
+
+.booking-grid .booking-field{
+  width:100%;
+}
+
+.booking-grid > button{
+  justify-self:center;
+}
+
+/* MOBIL */
+@media (max-width: 600px){
+  .booking-grid{
+    max-width:100%;
+    padding:0 16px;          /* respirație pe lateral */
+    justify-items:stretch;  /* input full width */
+  }
+
+  .booking-grid > button{
+    justify-self:center;
+  }
+}
+
+
+
+input,select,button{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  border:none;
+}
+
+input,select{
+  background:#D8CEC6;
+  color:#000000;
+  border:1px solid rgba(255,255,255,.1);
+}
+
+button{
+  background: var(--gold);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* ================= SECTIONS ================= */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:20px 20px;
+}
+
+h2{
+  font-size:clamp(28px,6vw,42px);
+  margin-bottom:32px;
+}
+
+/* ================= ROOMS ================= */
+.rooms{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.room{
+  background:var(--card1);
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.06);
+   box-shadow: var(--shadow);
+}
+
+.room img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.room-body{padding:20px}
+.room-title{margin:0 0 6px}
+.room-info{font-size:14px;color:var(--muted)}
+.room-price{margin-top:10px;font-weight:600}
+
+/* ================= FACILITIES ================= */
+.facilities{
+  display:grid;
+  margin-bottom:30px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;
+}
+
+.facility{
+  padding:24px;
+  background:var(--card1);
+   box-shadow: var(--shadow);
+  border-radius:var(--radius);
+}
+
+/* ================= REVIEWS ================= */
+.review-slider{position:relative;overflow:hidden}
+.review-slider{
+  max-width:900px;
+  margin:0 auto;
+  
+}
+
+
+.review-track{
+  display:flex;
+  gap:10px;          /* spațiu între slide-uri */
+  transition:0.8s;
+}
+
+.review{
+  min-width:calc(100% - 10px);
+  background:#FFFFFF;
+
+  border-radius:var(--radius);
+  padding:36px 56px;
+}
+
+.review-stars{color:#facc15}
+.review-name{margin-top:12px;font-size:14px;color:var(--muted)}
+
+.slider-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:40px;height:40px;
+  border-radius:50%;
+  background:rgba(0,0,0,.5);
+  color:#fff;
+  border:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.arrow-left{left:12px}
+.arrow-right{right:12px}
+
+/* ================= CONTACT ================= */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+/* ================= MODAL ================= */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+}
+
+/* IMPORTANT iOS */
+.modal-box{
+  background:var(--card);
+  width:100%;
+  max-width:520px;
+  max-height:85dvh; /* iOS 16+ */
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  border-radius:26px;
+  padding:20px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+
+#date_range{
+  font-size:16px;
+}
+  
+
+
+.modal-close{
+  position:absolute;
+  top:1px;
+  right:1px;
+  width:23px;
+  height:23px;
+  border-radius:50%;
+  border:none;
+  background:rgba(255,255,255,.12);
+  cursor:pointer;
+  padding:0;
+  
+}
+
+.modal-close::before{
+  content:"✕";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size:14px;
+  font-weight:600;
+  color:#fff;
+  line-height:1;
+}
+
+.modal-close{
+  position:absolute;
+  top:10px;
+  right:15px;
+  width:23px;
+  height:23px;
+  border-radius:50%;
+  border:none;
+  background:rgba(255,255,255,.1);
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+}
+
+
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:20px;
+}
+
+
+.form-full{grid-column:1/-1}
+
+/* ================= FOOTER ================= */
+footer{
+  padding:40px 20px;
+  text-align:center;
+  color:var(--muted);
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:900px){
+  .header-inner{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .contact-grid{grid-template-columns:1fr}
+  .slider-arrow{display:none}
+  .form-grid{grid-template-columns:1fr}
+}
+
+
+.booking-field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.booking-field label{
+  font-size:15px;
+  color:#1E293B;
+  padding-left:4px;
+}
+
+
+
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-bottom:1px;
+  
+}
+
+html, body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+.booking-grid input,
+.booking-grid button{
+  height:48px;
+}
+
+.booking-grid{
+  display:flex;
+  gap:12px;
+}
+
+.booking-grid .booking-field{
+  flex:2; /* input mai lat */
+}
+
+.booking-grid button{
+  flex:1; /* buton mai mic */
+}
+
+
+.check-card{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:14px;
+  border-radius:14px;
+  background:rgba(255,255,255,.05);
+  border:2px solid rgba(255,255,255,.12);
+  cursor:pointer;
+}
+
+.check-card input{
+  width:18px;
+  height:18px;
+}
+
+.modal-box input,
+.modal-box select{
+  padding:14px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:14px;
+}
+
+input,
+select,
+textarea{
+  font-size:16px;
+}
+
+.room-desc{
+  margin-top:10px;
+  font-size:14px;
+  color:var(--muted);
+  text-align:center;
+  line-height:1.4;
+}
+
+
+.about-box{
+  max-width:800px;
+  margin:0 auto;
+
+
+}
+
+.about-box p{
+  font-size:16px;
+  line-height:1.6;
+  color:var(--muted);
+  text-align:center;
+  margin-bottom:1px;
+  
+}
+
+#rooms{
+  padding-bottom:40px;
+}
+
+#about{
+  padding-top:40px;
+ 
+}
+
+.reviews-intro{
+  max-width:700px;
+  margin:0 auto 40px;
+  text-align:center;
+  font-size:16px;
+  line-height:1.6;
+  color:var(--muted);
+}
+
+
+
+
+
+/* container – împinge boxul în dreapta */
+.total-wrap{
+  display:flex;
+  justify-content:flex-end;
+  margin:5px 0;
+}
+
+/* box premium */
+.total-box{
+  width:65%;                 /* 🔴 doar jumătate */
+  background:rgba(255,255,255,.06);
+  border:2px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:10px 10px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+/* text */
+.total-label{
+  font-size:13px;
+  color:#FFFFFF;
+}
+
+.total-amount{
+  font-size:22px;
+  font-weight:700;
+  color:#FFFFFF;
+}
+
+.total-amount small{
+  font-size:13px;
+  color:#FFFFFF;
+  margin-left:4px;
+}
+
+
+
+/* container */
+.flatpickr-calendar{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.5);
+  color:#fff;
+}
+
+/* header lună */
+.flatpickr-months{
+  padding:12px 0;
+}
+
+.flatpickr-month{
+  color:#fff;
+  font-weight:600;
+}
+
+/* săgeți */
+.flatpickr-prev-month,
+.flatpickr-next-month{
+  fill:var(--accent);
+}
+
+/* zile săptămână */
+.flatpickr-weekday{
+  color:#fff;
+  opacity:.7;
+}
+
+/* zile */
+.flatpickr-day{
+  color:#fff;
+  border-radius:10px;
+}
+
+/* hover */
+.flatpickr-day:hover{
+  background:rgba(56,189,248,.2);
+}
+
+/* selectat */
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange{
+  background:var(--accent);
+  color:#020617;
+}
+
+/* range */
+.flatpickr-day.inRange{
+  background:rgba(56,189,248,.35);
+  color:#fff;
+}
+
+/* azi */
+.flatpickr-day.today{
+  border:1px solid var(--accent);
+}
+
+/* dezactivate */
+.flatpickr-day.disabled{
+  color:rgba(255,255,255,.3);
+}
+
+/* LUNA */
+.flatpickr-current-month,
+.flatpickr-current-month span,
+.flatpickr-current-month input{
+  color:#fff !important;
+}
+
+/* ZILELE SĂPTĂMÂNII */
+.flatpickr-weekdays,
+.flatpickr-weekday{
+  color:#fff !important;
+}
+
+/* ORE (time picker) */
+.flatpickr-time,
+.flatpickr-time input,
+.flatpickr-time-separator,
+.flatpickr-am-pm{
+  color:#fff !important;
+}
+
+/* SĂGEȚI (unele browsere) */
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg{
+  fill: var(--accent) !important;
+}
+
+/* INPUT ORĂ – contrast corect */
+.flatpickr-time input{
+  background:var(--card) !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.15);
+}
+
+/* când e focus */
+.flatpickr-time input:focus{
+  background:var(--card) !important;
+  color:#fff !important;
+  outline:none;
+}
+
+/* separatoare + AM/PM */
+.flatpickr-time-separator,
+.flatpickr-am-pm{
+  color:#fff !important;
+}
+
+
+/* RANGE CONTINUU – fără spații albe între zile */
+.flatpickr-day.startRange,
+.flatpickr-day.inRange,
+.flatpickr-day.endRange{
+  box-shadow:none !important;
+  margin:0 !important;
+}
+
+/* rotunjire doar la capete */
+.flatpickr-day.startRange{
+  border-top-left-radius:999px;
+  border-bottom-left-radius:999px;
+}
+
+.flatpickr-day.endRange{
+  border-top-right-radius:999px;
+  border-bottom-right-radius:999px;
+}
+
+/* zilele din interior – drept */
+.flatpickr-day.inRange{
+  border-radius:0 !important;
+}
+
+
+/* ===== GALERIE ===== */
+.gallery {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 20px;
+ 
+}
+
+.gallery h2 {
+  
+  margin-bottom: 24px;
+}
+
+.gallery-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+   box-shadow: var(--shadow);
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform .4s ease;
+  touch-action: pan-y;
+}
+
+.gallery-track img {
+  min-width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Desktop puțin mai înalt */
+@media (min-width: 900px) {
+  .gallery-track img {
+    height: 420px;
+  }
+}
+
+/* ===== SĂGEȚI ===== */
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-arrow.left { left: 12px; }
+.gallery-arrow.right { right: 12px; }
+
+/* Mobil – săgeți puțin mai mici */
+@media (max-width: 600px) {
+  .gallery-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #D8CEC6;
+  color: #000000;
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* Focus premium */
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #2f5eff;
+  box-shadow: 0 0 0 2px rgba(47,94,255,0.2);
+}
+
+/* Placeholder */
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Label spacing */
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+
+
+
+
+.section-gray{
+  background:#fff8f1;
+  color: var(--gold-dark);
+  
+  
+}
+
+.section-gray h1,
+.section-gray h2,
+.section-gray h3,
+.section-gray h4{
+  color: var(--gold-dark);   /* titluri mai puternice */
+}
+
+.section-gray p{
+  color:#334155;   /* paragraf echilibrat */
+}  
+  
+/* Permite click pe disabled */
+.flatpickr-day.flatpickr-disabled{
+  pointer-events:auto !important;
+  cursor:not-allowed;
+}
+
+/* Doar zilele din blockedRanges */
+.blocked-custom{
+  color:#b91c1c !important;
+  background:rgba(185,28,28,0.08);
+  border-radius:6px;
+  opacity:1 !important;
+}
+
+/* Tooltip mic în zi */
+.fp-msg{
+  position:absolute;
+  bottom:2px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#b91c1c;
+  color:#fff;
+  font-size:10px;
+  padding:2px 6px;
+  border-radius:4px;
+  white-space:nowrap;
+}
+
+/* Zile din altă lună – doar culoare text */
+.flatpickr-calendar .flatpickr-day.prevMonthDay:not(.flatpickr-disabled),
+.flatpickr-calendar .flatpickr-day.nextMonthDay:not(.flatpickr-disabled){
+  background: transparent !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+
+
+
+
+/* Meniu ascuns implicit */
+.mobile-menu {
+  position:fixed;
+  top:0;
+  right:-100%;
+  width:55%;
+  max-width:400px;
+  height:100vh;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  padding-top:80px;
+  transition:0.4s ease;
+  z-index:3000;
+}
+
+/* Cand e activ */
+.mobile-menu.active {
+  right:0;
+}
+
+/* Linkuri */
+.mobile-menu a {
+  padding:18px 25px;
+  text-decoration:none;
+  color:#333;
+  border-bottom:1px solid #eee;
+  font-size:18px;
+  
+}
+
+/* Buton inchidere */
+.close-btn {
+  z-index:auto;
+  position:absolute;
+  top:15px;
+  right:15px;
+  background:#b98a49;
+  color:#fff;
+  border:none;
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  font-size:17px;
+  cursor:pointer;
+  
+   display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.header{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between; /* asta îl împinge în dreapta */
+  padding:15px 20px;
+  
+}
+
+/* buton dreapta */
+.menu-toggle{
+  background:#b98a49;
+  color:#fff;
+  border:none;
+  font-size:24px;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  cursor:pointer;
+  z-index:1000;
+  
+   display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* daca vrei forțat absolut în colț */
+.menu-toggle{
+  position:fixed;
+  top:15px;
+  right:20px;
+}

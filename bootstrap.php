@@ -1,0 +1,31 @@
+<?php
+
+// 🔹 Permite orice origine
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Content-Type: application/json");
+
+// 🔹 Dacă e preflight (unele browsere trimit OPTIONS)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
+
+header('Content-Type: application/json');
+
+$hotel = $_GET['hotel'] ?? '';
+
+$status = [
+    'monopoly' => 1,
+    'hotelx'   => 1,
+    'altul'    => 1
+];
+
+if (!isset($status[$hotel]) || $status[$hotel] === 0) {
+    echo json_encode(['active' => false]);
+    exit;
+}
+
+echo json_encode(['active' => true]);
+exit;
