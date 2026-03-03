@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const HOTEL_ID = document.body.dataset.hotel; 
 // ex: monopoly
 
-fetch(`https://smart-feedback.ro/price/${HOTEL_ID}.json`)
+fetch(`https://valentin571-wq.github.io/smart-feed/${HOTEL_ID}.json`)
   .then(r => r.json())
   .then(data => {
     document.querySelectorAll('[data-room]').forEach(el => {
@@ -377,7 +377,7 @@ fetch(`https://smart-feedback.ro/price/${HOTEL_ID}.json`)
   try {
 
     const res = await fetch(
-      "https://www.smart-feedback.ro/kill/bootstrap.php?hotel=" + hotel,
+      "https://valentin571-wq.github.io/smart-feed/bootstrap.php?hotel=" + hotel,
       { cache: "no-store" }
     );
 
@@ -420,7 +420,7 @@ fetch(`https://smart-feedback.ro/price/${HOTEL_ID}.json`)
     // 🔹 Încarcă CSS doar dacă activ
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "https://www.smart-feedback.ro/css/hotels/style.css";
+    link.href = "https://valentin571-wq.github.io/smart-feed/style.css";
     document.head.appendChild(link);
 
     link.onload = () => {
@@ -489,6 +489,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
 
 
 
