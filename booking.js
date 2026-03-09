@@ -360,11 +360,11 @@ fetch(`https://www.smart-feedback.ro/price/${HOTEL_ID}.json`)
   });
 })();
 
+    
 
 
-(async () => {
+  (async () => {
 
-  // 🔹 Luăm hotelul direct din body
   const hotel = document.body.dataset.hotel;
 
   console.log("Locatie detectata:", hotel);
@@ -377,47 +377,46 @@ fetch(`https://www.smart-feedback.ro/price/${HOTEL_ID}.json`)
   try {
 
     const res = await fetch(
-      "https://www.smart-feedback.ro/kill/bootstrap.php?hotel=" + hotel,
+      "https://valentin571-wq.github.io/smart-feed/status.json",
       { cache: "no-store" }
     );
 
     const data = await res.json();
 
-   if (!data.active) {
-  document.documentElement.innerHTML = `
-    <style>
-      body{
-        margin:0;
-        height:100vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        background:#0f172a;
-        font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
-        color:#fff;
-      }
-      .suspend-box{
-        text-align:center;
-      }
-      .suspend-box h1{
-        font-size:28px;
-        margin:0 0 10px;
-      }
-      .suspend-box p{
-        opacity:.7;
-        margin:0;
-        font-size:14px;
-      }
-    </style>
-    <div class="suspend-box">
-      <h1>Serviciul nu mai este activ</h1>
-      <p>Vă rugăm contactați administratorul.</p>
-    </div>
-  `;
-  return;
-}
+    if (!data[hotel]) {
+      document.documentElement.innerHTML = `
+        <style>
+          body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#0f172a;
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+            color:#fff;
+          }
+          .suspend-box{
+            text-align:center;
+          }
+          .suspend-box h1{
+            font-size:28px;
+            margin:0 0 10px;
+          }
+          .suspend-box p{
+            opacity:.7;
+            margin:0;
+            font-size:14px;
+          }
+        </style>
+        <div class="suspend-box">
+          <h1>Serviciul nu mai este activ</h1>
+          <p>Vă rugăm contactați administratorul.</p>
+        </div>
+      `;
+      return;
+    }
 
-    // 🔹 Încarcă CSS doar dacă activ
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = "https://valentin571-wq.github.io/smart-feed/style.css";
@@ -466,7 +465,11 @@ fetch(`https://www.smart-feedback.ro/price/${HOTEL_ID}.json`)
   }
 
 })();
+     
+   
 
+   
+     
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -489,6 +492,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
 
 
 
