@@ -1,6 +1,7 @@
 {
-  "monopoly": false,
+  "monopoly": true,
   "hotelx": true,
   "altul": true
 
 }
+
