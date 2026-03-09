@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const HOTEL_ID = document.body.dataset.hotel; 
 // ex: monopoly
 
-fetch(`https://www.smart-feedback.ro/price/${HOTEL_ID}.json`)
+fetch(`https://valentin571-wq.github.io/smart-feed/price/${HOTEL_ID}.json`)
   .then(r => r.json())
   .then(data => {
     document.querySelectorAll('[data-room]').forEach(el => {
@@ -492,6 +492,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
 
 
 
