@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
      ===================== */
   const HOTEL_CONFIG = {
     monopoly: {
-      prices: { 1:200, 2:250, 3:250, 4:300 },
+      prices: { 1:220, 2:250, 3:250, 4:300 },
       micDejunPretAdult: 50,
       micDejunPretCopil: 5,
       hasBreakfast: true,
@@ -489,6 +489,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
 });
+
 
 
 
