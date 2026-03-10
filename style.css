@@ -1067,8 +1067,8 @@ textarea{
   border-radius:50%;
   border:none;
 
-  background:#e5e5e5;
-  color:#000;
+  background:#8e622e;
+  color:#fff;
 
   font-size:16px;
 
@@ -1078,6 +1078,7 @@ textarea{
 
   cursor:pointer;
 }
+
 
 
 
