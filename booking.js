@@ -496,6 +496,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+function openTerms(){
+
+  fetch('https://valentin571-wq.github.io/smart-feed/terms.json')
+  .then(res => res.json())
+  .then(data => {
+
+    document.getElementById("termsTitle").textContent = data.title;
+    document.getElementById("termsText").textContent = data.content;
+
+    document.getElementById("termsPopup").style.display = "flex";
+
+  });
+
+}
+
+function closeTerms(){
+  document.getElementById("termsPopup").style.display = "none";
+}
 
 
 
