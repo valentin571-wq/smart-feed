@@ -1058,18 +1058,27 @@ textarea{
 
 .terms-close{
   position:absolute;
-  top:10px;
+  top:12px;
   right:12px;
-  
-  background:#8e622e;
-  font-size:20px;
-  cursor:pointer;
-  color:#000;
+
   width:28px;
   height:28px;
+
   border-radius:50%;
+  border:none;
+
+  background:#e5e5e5;
+  color:#000;
+
+  font-size:16px;
+  line-height:28px;
+  text-align:center;
+
+  cursor:pointer;
+}
   
 }
+
 
 
 
