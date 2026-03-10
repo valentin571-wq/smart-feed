@@ -1,0 +1,35 @@
+{
+  "politica_confidentialitate": {
+    "titlu": "Politica de confidențialitate",
+    "sectiuni": [
+      {
+        "titlu": "1. Informații generale",
+        "continut": "Protecția datelor cu caracter personal este importantă pentru noi. Această politică explică modul în care colectăm, utilizăm și protejăm informațiile furnizate prin intermediul site-ului."
+      },
+      {
+        "titlu": "2. Date colectate",
+        "continut": "Putem colecta date precum numele, adresa de email, numărul de telefon sau alte informații furnizate voluntar prin formularele disponibile pe site."
+      },
+      {
+        "titlu": "3. Utilizarea datelor",
+        "continut": "Datele furnizate sunt utilizate exclusiv pentru procesarea solicitărilor, rezervărilor sau pentru comunicarea cu utilizatorii."
+      },
+      {
+        "titlu": "4. Stocarea datelor",
+        "continut": "Datele sunt păstrate doar pentru perioada necesară îndeplinirii scopului pentru care au fost colectate și sunt protejate prin măsuri tehnice adecvate."
+      },
+      {
+        "titlu": "5. Drepturile utilizatorilor",
+        "continut": "Utilizatorii au dreptul de acces, rectificare sau ștergere a datelor personale, precum și dreptul de a solicita limitarea prelucrării acestora."
+      },
+      {
+        "titlu": "6. Cookie-uri",
+        "continut": "Site-ul poate utiliza cookie-uri pentru îmbunătățirea experienței utilizatorilor și pentru analizarea traficului."
+      },
+      {
+        "titlu": "7. Modificări",
+        "continut": "Ne rezervăm dreptul de a modifica această politică de confidențialitate oricând, fără notificare prealabilă."
+      }
+    ]
+  }
+}
