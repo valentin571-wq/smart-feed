@@ -1034,7 +1034,7 @@ textarea{
   max-width:700px;
   max-height:85vh;
   border-radius:8px;
-  padding:25px;
+  padding:5px;
   position:relative;
   display:flex;
   flex-direction:column;
@@ -1078,9 +1078,7 @@ textarea{
 
   cursor:pointer;
 }
-}
-  
-}
+
 
 
 
