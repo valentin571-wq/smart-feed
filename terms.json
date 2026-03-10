@@ -1,43 +1,74 @@
 {
-  "termeni_si_conditii": {
-    "titlu": "Termeni și Condiții",
-    "sectiuni": [
-      {
-        "titlu": "1. Informații generale",
-        "continut": "Acest site are rol informativ și permite utilizatorilor să consulte informații despre unități de cazare, disponibilitate, tarife și servicii oferite. Prin accesarea și utilizarea site-ului, utilizatorul confirmă că a citit și acceptat acești termeni și condiții. Administratorul site-ului își rezervă dreptul de a modifica conținutul site-ului fără notificare prealabilă."
-      },
-      {
-        "titlu": "2. Rezervări",
-        "continut": "Rezervările pot fi realizate prin intermediul formularului de rezervare disponibil pe site sau prin alte metode indicate pe pagină. O rezervare este considerată confirmată doar după primirea unei confirmări explicite prin email sau prin sistemul de rezervare utilizat."
-      },
-      {
-        "titlu": "3. Tarife și disponibilitate",
-        "continut": "Tarifele afișate pe site sunt informative și pot fi modificate în orice moment fără notificare prealabilă. Disponibilitatea camerelor este actualizată periodic, însă pot exista situații în care informațiile afișate să nu reflecte în timp real starea rezervărilor."
-      },
-      {
-        "titlu": "4. Politica de anulare",
-        "continut": "Politica de anulare poate varia în funcție de tipul rezervării, perioada sejurului sau ofertele speciale disponibile. Condițiile exacte de anulare și modificare a rezervării vor fi comunicate utilizatorului în momentul efectuării rezervării."
-      },
-      {
-        "titlu": "5. Utilizarea site-ului",
-        "continut": "Utilizatorii se obligă să folosească site-ul doar în scopuri legale și să nu desfășoare activități care ar putea afecta funcționarea acestuia. Este interzisă încercarea de acces neautorizat la sistemele site-ului sau utilizarea abuzivă a platformei."
-      },
-      {
-        "titlu": "6. Proprietate intelectuală",
-        "continut": "Conținutul site-ului, inclusiv textele, imaginile și elementele grafice, este protejat de legislația privind drepturile de autor. Reproducerea sau distribuirea materialelor fără acordul administratorului site-ului este interzisă."
-      },
-      {
-        "titlu": "7. Limitarea răspunderii",
-        "continut": "Administratorul site-ului depune eforturi pentru a menține informațiile corecte și actualizate, însă nu garantează că toate informațiile sunt lipsite de erori. Nu poate fi responsabil pentru eventuale întreruperi ale funcționării site-ului sau pentru pierderi rezultate din utilizarea informațiilor afișate."
-      },
-      {
-        "titlu": "8. Protecția datelor",
-        "continut": "Datele personale furnizate prin intermediul site-ului pot fi utilizate exclusiv pentru procesarea rezervărilor sau pentru comunicarea cu utilizatorii. Pentru detalii suplimentare, utilizatorii trebuie să consulte politica de confidențialitate a site-ului."
-      },
-      {
-        "titlu": "9. Legislație aplicabilă",
-        "continut": "Acești termeni și condiții sunt guvernați de legislația aplicabilă în jurisdicția în care își desfășoară activitatea administratorul site-ului."
-      }
-    ]
-  }
+  "title": "Termeni și condiții",
+  "content": "Informații generale
+
+Acest site are rol informativ și permite utilizatorilor să consulte informații despre unități de cazare, disponibilitate, tarife și servicii oferite.
+
+Prin accesarea și utilizarea site-ului, utilizatorul confirmă că a citit, înțeles și acceptat acești termeni și condiții.
+
+Administratorul site-ului își rezervă dreptul de a modifica conținutul site-ului, inclusiv termenii și condițiile, fără notificare prealabilă.
+
+Rezervări
+
+Rezervările pot fi realizate prin intermediul formularului de rezervare disponibil pe site sau prin alte metode indicate pe pagină.
+
+O rezervare este considerată confirmată doar după primirea unei confirmări explicite prin email sau prin sistemul de rezervare utilizat.
+
+Administratorul site-ului își rezervă dreptul de a refuza sau anula o rezervare în cazul unor erori tehnice, informații incomplete sau suspiciuni de utilizare abuzivă.
+
+Tarife și disponibilitate
+
+Tarifele afișate pe site sunt informative și pot fi modificate în orice moment fără notificare prealabilă.
+
+Disponibilitatea camerelor este actualizată periodic, însă pot exista situații în care informațiile afișate să nu reflecte în timp real starea rezervărilor.
+
+În cazul unor erori de afișare a prețurilor sau disponibilității, administratorul site-ului își rezervă dreptul de a corecta informațiile și de a informa utilizatorul înainte de confirmarea finală a rezervării.
+
+Politica de anulare
+
+Politica de anulare poate varia în funcție de tipul rezervării, perioada sejurului sau ofertele speciale disponibile.
+
+Condițiile exacte de anulare și modificare a rezervării vor fi comunicate utilizatorului în momentul efectuării rezervării sau în confirmarea acesteia.
+
+Utilizarea site-ului
+
+Utilizatorii se obligă să folosească site-ul doar în scopuri legale și să nu desfășoare activități care ar putea afecta funcționarea acestuia.
+
+Este interzisă:
+
+încercarea de acces neautorizat la sistemele site-ului
+
+utilizarea automată a sistemelor de rezervare
+
+copierea sau distribuirea conținutului fără acordul administratorului
+
+Proprietate intelectuală
+
+Conținutul site-ului, inclusiv textele, imaginile, logo-urile și elementele grafice, este protejat de legislația privind drepturile de autor.
+
+Reproducerea, distribuirea sau utilizarea acestor materiale fără acordul proprietarului site-ului este interzisă.
+
+Limitarea răspunderii
+
+Administratorul site-ului depune eforturi pentru a menține informațiile corecte și actualizate, însă nu garantează că toate informațiile sunt lipsite de erori.
+
+Administratorul nu poate fi responsabil pentru:
+
+întreruperi ale funcționării site-ului
+
+erori tehnice sau de afișare
+
+pierderi rezultate din utilizarea informațiilor de pe site
+
+Protecția datelor
+
+Datele personale furnizate prin intermediul site-ului sunt prelucrate în conformitate cu legislația aplicabilă privind protecția datelor.
+
+Pentru detalii complete privind modul de colectare și utilizare a datelor, utilizatorii sunt încurajați să consulte politica de confidențialitate disponibilă pe site.
+
+Legislație aplicabilă
+
+Acești termeni și condiții sunt guvernați de legislația aplicabilă în jurisdicția în care își desfășoară activitatea administratorul site-ului.
+
+Eventualele litigii vor fi soluționate pe cale amiabilă, iar în cazul în care acest lucru nu este posibil, vor fi supuse instanțelor competente."
 }
