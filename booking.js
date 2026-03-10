@@ -498,12 +498,26 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function openTerms(){
 
-  fetch('https://valentin571-wq.github.io/smart-feed/terms.json')
-  .then(res => res.json())
+  fetch('https://valentin571-wq.github.io/smart-feed//terms.json')
+  .then(r => r.json())
   .then(data => {
 
-    document.getElementById("termsTitle").textContent = data.title;
-    document.getElementById("termsText").textContent = data.content;
+    const terms = data.termeni_si_conditii;
+
+    document.getElementById("termsTitle").textContent = terms.titlu;
+
+    let html = "";
+
+    terms.sectiuni.forEach(sec => {
+
+      html += `
+        <h3>${sec.titlu}</h3>
+        <p>${sec.continut}</p>
+      `;
+
+    });
+
+    document.getElementById("termsContent").innerHTML = html;
 
     document.getElementById("termsPopup").style.display = "flex";
 
@@ -514,6 +528,7 @@ function openTerms(){
 function closeTerms(){
   document.getElementById("termsPopup").style.display = "none";
 }
+
 
 
 
