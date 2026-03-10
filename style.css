@@ -1035,7 +1035,6 @@ textarea{
   max-height:80vh;
   border-radius:8px;
   padding:25px;
-  padding-top:40px;
   position:relative;
   display:flex;
   flex-direction:column;
@@ -1043,15 +1042,15 @@ textarea{
 
 .terms-content{
   overflow-y:auto;
+  margin-top:10px;
 }
 
 .terms-close{
   position:absolute;
   top:10px;
-  right:15px;
+  right:10px;
   border:none;
   background:none;
-  font-size:22px;
+  font-size:20px;
   cursor:pointer;
-  z-index:10;
 }
