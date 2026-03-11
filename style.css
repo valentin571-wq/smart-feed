@@ -1089,8 +1089,8 @@ textarea{
 }
 
 .breakfast-img{
-  width:70px;      /* o poți face cât vrei */
-  height:60px;
+  width:67px;      /* o poți face cât vrei */
+  height:65px;
   object-fit:cover;
   margin-left:10px;
   flex-shrink:0;   /* important */
@@ -1101,6 +1101,7 @@ margin-right:8px;
 color:#d6b37a;
   font-size:16px;
 }
+
 
 
 
