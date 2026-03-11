@@ -1086,11 +1086,12 @@ textarea{
 }
 
 .breakfast-img{
-  width:60px;
-  height:60px;
-  object-fit:cover;
-  border-radius:6px;
-  margin-left:10px;
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  width:80px;   /* aici o faci cat vrei */
+  height:auto;
 }
 
 label i{
@@ -1098,6 +1099,7 @@ margin-right:8px;
 color:#d6b37a;
   font-size:16px;
 }
+
 
 
 
