@@ -1081,24 +1081,26 @@ textarea{
 
 .check-card{
   display:flex;
-  align-items:left;
-  justify-content:space-between;
+  align-items:center;
+}
+
+.check-card span{
+  flex:1;
 }
 
 .breakfast-img{
-  position:absolute;
-  right:10px;
-  top:50%;
-  transform:translateY(-50%);
-  width:80px;   /* aici o faci cat vrei */
-  height:auto;
+  width:90px;      /* o poți face cât vrei */
+  height:60px;
+  object-fit:cover;
+  margin-left:10px;
+  flex-shrink:0;   /* important */
 }
-
 label i{
 margin-right:8px;
 color:#d6b37a;
   font-size:16px;
 }
+
 
 
 
