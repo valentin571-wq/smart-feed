@@ -1082,7 +1082,6 @@ textarea{
 .check-card{
   display:flex;
   align-items:center;
-  overflow:visible;
 }
 
 .check-card span{
@@ -1090,12 +1089,11 @@ textarea{
 }
 
 .breakfast-img{
-  width:80px;
-  height:80px;
+  width:90px;      /* o poți face cât vrei */
+  height:60px;
+  object-fit:cover;
   margin-left:10px;
-  flex-shrink:0;
-  position:relative;
-  top:6px;
+  flex-shrink:0;   /* important */
 }
 
 label i{
@@ -1103,6 +1101,7 @@ margin-right:8px;
 color:#d6b37a;
   font-size:16px;
 }
+
 
 
 
