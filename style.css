@@ -1090,8 +1090,8 @@ textarea{
 }
 
 .breakfast-img{
-  width:110px;
-  height:auto;
+  width:80px;
+  height:80px;
   margin-left:10px;
   flex-shrink:0;
   position:relative;
@@ -1103,6 +1103,7 @@ margin-right:8px;
 color:#d6b37a;
   font-size:16px;
 }
+
 
 
 
