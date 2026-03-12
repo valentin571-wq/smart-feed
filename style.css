@@ -584,7 +584,7 @@ textarea{
 
 /* box premium */
 .total-box{
-  width:65%;                 /* 🔴 doar jumătate */
+  width:75%;                 /* 🔴 doar jumătate */
   background:rgba(255,255,255,.06);
   border:2px solid rgba(255,255,255,.12);
   border-radius:16px;
@@ -1116,6 +1116,7 @@ border-radius:50%;
 border:2px solid rgba(255,255,255,.3);
 font-size:14px;
 }
+
 
 
 
