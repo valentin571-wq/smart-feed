@@ -1111,16 +1111,17 @@ margin-right:8px;
 }
 
 .total-label i{
-  width:27px;
-  height:27px;
+  width:30px;
+  height:30px;
   display:flex;
   align-items:center;
   justify-content:center;
   border-radius:50%;
   border:2px solid rgba(255,255,255,.25);
-  font-size:14px;
+  font-size:16px;
   flex-shrink:0;
 }
+
 
 
 
