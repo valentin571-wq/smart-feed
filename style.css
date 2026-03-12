@@ -600,6 +600,10 @@ textarea{
 .total-label{
   font-size:13px;
   color:#FFFFFF;
+
+  display:flex;
+  align-items:center;
+  gap:6px;
 }
 
 .total-amount{
@@ -1107,16 +1111,17 @@ margin-right:8px;
 }
 
 .total-label i{
-width:28px;
-height:28px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-border:2px solid rgba(255,255,255,.3);
-font-size:14px;
-flex-shrink:0;
+  width:24px;
+  height:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.25);
+  font-size:12px;
+  flex-shrink:0;
 }
+
 
 
 
