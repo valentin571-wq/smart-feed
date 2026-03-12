@@ -1108,6 +1108,7 @@ color:#d6b37a;
 .facility i{
 font-size:18px;
 margin-right:8px;
+  color:#b98a49;
 }
 
 .total-label i{
@@ -1121,6 +1122,7 @@ margin-right:8px;
   font-size:16px;
   flex-shrink:0;
 }
+
 
 
 
