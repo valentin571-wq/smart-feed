@@ -1178,7 +1178,13 @@ color:#b98a49;
 font-size:12px;
 }
 
+.feature-pill{
+transition:0.2s;
+}
 
+.feature-pill:hover{
+background:#f3f3f3;
+}
 
 
 
