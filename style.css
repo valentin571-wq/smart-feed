@@ -1164,18 +1164,18 @@ margin-top:15px;
 .feature-pill{
 display:flex;
 align-items:center;
-gap:8px;
-padding:8px 14px;
+gap:5px;
+padding:5px 10px;
 border-radius:30px;
 border:1px solid #e5e5e5;
 background:#fafafa;
-font-size:12px;
+font-size:11px;
 color:#444;
 }
 
 .feature-pill i{
 color:#b98a49;
-font-size:12px;
+font-size:11px;
 }
 
 .feature-pill{
