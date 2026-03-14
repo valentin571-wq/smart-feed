@@ -1155,23 +1155,27 @@ border-right:1px solid #e2e2e2;
 }
 
 .room-features{
-display:grid;
-grid-template-columns:1fr 1fr;
+display:flex;
+flex-wrap:wrap;
 gap:10px;
 margin-top:15px;
 }
 
-.feature{
+.feature-pill{
 display:flex;
 align-items:center;
 gap:8px;
-font-size:12px;
+padding:8px 14px;
+border-radius:30px;
+border:1px solid #e5e5e5;
+background:#fafafa;
+font-size:14px;
 color:#444;
 }
 
-.feature i{
-font-size:16px;
+.feature-pill i{
 color:#b98a49;
+font-size:14px;
 }
 
 
