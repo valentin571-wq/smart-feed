@@ -5,9 +5,9 @@ const HOTEL_CONFIG = {
     prices: { 1:220, 2:250, 3:250, 4:300 },
     micDejunPretAdult: 50,
     micDejunPretCopil: 5,
-    hasBreakfast: false,
+    hasBreakfast: true,
     hasOnlinePayment: true,
-    hasCashPayment: false,
+    hasCashPayment: true,
     blockedRanges: [
       { from: "2026-03-15", to: "2026-03-20" }
     ]
