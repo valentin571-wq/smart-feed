@@ -1185,7 +1185,35 @@ transition:0.2s;
 background:#f3f3f3;
 }
 
+.facility{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
 
+  background:#ffffff;
+  padding:16px 18px;
+  border-radius:20px;
+  margin-bottom:14px;
+}
+
+.facility i{
+  font-size:22px;
+  color:#b98a49;
+  margin-top:4px;
+}
+
+.facility-title{
+  font-size:16px;
+  font-weight:600;
+  color:#7a5a2e;
+}
+
+.facility-desc{
+  font-size:13px;
+  color:#8b8b8b;
+  margin-top:3px;
+  line-height:1.3;
+}
 
 
 
