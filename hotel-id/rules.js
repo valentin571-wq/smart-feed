@@ -9,7 +9,7 @@ const HOTEL_CONFIG = {
     hasOnlinePayment: true,
     hasCashPayment: true,
     blockedRanges: [
-      { from: "2026-03-10", to: "2026-03-16" }
+      { from: "2026-03-15", to: "2026-03-20" }
     ]
   },
 
