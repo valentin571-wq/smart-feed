@@ -1188,12 +1188,12 @@ background:#f3f3f3;
 .facility{
   display:flex;
   align-items:flex-start;
-  gap:4px;
+  gap:16px;
 
   background:#ffffff;
   padding:16px 18px;
   border-radius:20px;
-  margin-bottom:14px;
+  margin-bottom:5px;
 }
 
 .facility i{
