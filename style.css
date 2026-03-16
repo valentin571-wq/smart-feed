@@ -1233,22 +1233,14 @@ background:#f3f3f3;
   position:absolute;
   bottom:15px;
   right:15px;
-  z-index:10; /* FOARTE IMPORTANT */
-  background:red;
+  z-index:999999999; /* FOARTE IMPORTANT */
+  background:rgba(0,0,0,0.6);
   color:#fff;
   font-size:12px;
   padding:6px 12px;
   border-radius:20px;
   pointer-events:none;
-  
- 
 }
-
-
-.swiper-slide{
-  position:relative;
-}
-
 
 
 
