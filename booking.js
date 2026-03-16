@@ -526,7 +526,27 @@ function closePrivacy(){
 }
 
 
+document.addEventListener("DOMContentLoaded", () => {
 
+  const sliders = document.querySelectorAll(".room-slider");
+
+  sliders.forEach(slider => {
+    const swiper = new Swiper(slider, {
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+
+    swiper.on("slideChange", () => {
+      const hint = slider.querySelector(".swipe-hint");
+      if (hint) hint.style.opacity = "0";
+    });
+  });
+
+});
 
 
 
