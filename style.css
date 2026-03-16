@@ -1245,7 +1245,9 @@ background:#f3f3f3;
 }
 
 
-
+.swiper-slide{
+  position:relative;
+}
 
 
 
