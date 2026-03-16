@@ -1236,7 +1236,12 @@ background:#f3f3f3;
   opacity:1 !important;
 }
 
-
+.room-slider img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+}
 
 
 
