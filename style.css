@@ -1218,26 +1218,28 @@ background:#f3f3f3;
 
 .room-slider{
   position:relative;
+  overflow:hidden;
 }
 
+.room-slider img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+}
+
+/* overlay */
 .swipe-hint{
   position:absolute;
-  bottom:12px;
-  right:12px;
-  background:rgba(0,0,0,0.45);
+  bottom:15px;
+  right:15px;
+  z-index:10; /* FOARTE IMPORTANT */
+  background:rgba(0,0,0,0.6);
   color:#fff;
   font-size:12px;
   padding:6px 12px;
   border-radius:20px;
-  backdrop-filter: blur(6px);
-  opacity:0.9;
   pointer-events:none;
-  transition:0.3s;
-}
-
-/* dispare dupa hover / interactiune */
-.room-slider:hover .swipe-hint{
-  opacity:0;
 }
 
 
