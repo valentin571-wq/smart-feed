@@ -1216,7 +1216,29 @@ background:#f3f3f3;
 }
 
 
+.room-slider{
+  position:relative;
+}
 
+.swipe-hint{
+  position:absolute;
+  bottom:12px;
+  right:12px;
+  background:rgba(0,0,0,0.45);
+  color:#fff;
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:20px;
+  backdrop-filter: blur(6px);
+  opacity:0.9;
+  pointer-events:none;
+  transition:0.3s;
+}
+
+/* dispare dupa hover / interactiune */
+.room-slider:hover .swipe-hint{
+  opacity:0;
+}
 
 
 
