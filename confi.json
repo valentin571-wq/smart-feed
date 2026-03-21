@@ -1,4 +1,29 @@
 {
+  "politica_anulare_rambursare": {
+    "titlu": "Politica de retur",
+    "sectiuni": [
+      {
+        "titlu": "1. Condiții generale",
+        "continut": "Rezervările efectuate prin intermediul site-ului sunt supuse condițiilor de anulare afișate în momentul rezervării. Clientul are obligația de a verifica tipul tarifului selectat (rambursabil sau nerambursabil) înainte de finalizarea plății."
+      },
+      {
+        "titlu": "2. Tipuri de tarife",
+        "continut": "Tarifele rambursabile permit anularea rezervării cu rambursarea sumei achitate dacă solicitarea este transmisă în termenul specificat în ofertă (ex: 24 sau 48 de ore înainte de data sosirii). Tarifele nerambursabile nu permit restituirea sumei achitate în cazul anulării, modificării sau neprezentării."
+      },
+      {
+        "titlu": "3. Procedura de anulare",
+        "continut": "Solicitarea de anulare sau modificare se face prin e-mail la adresa de contact afișată pe site, cu menționarea ID-ul rezervării."
+      },
+      {
+        "titlu": "4. Rambursări",
+        "continut": "Dacă solicitarea este aprobată conform condițiilor tarifului ales, rambursarea se efectuează exclusiv pe cardul utilizat la plată, prin procesatorul de plăți. Termenul de procesare este, în mod obișnuit, între 5 și 10 zile lucrătoare, în funcție de banca emitentă."
+      },
+      {
+        "titlu": "5. Excepții",
+        "continut": "Nu se acordă rambursări pentru servicii deja utilizate, integral sau parțial, sau în cazul neprezentării (no-show), dacă nu a fost efectuată o anulare conform politicii aplicabile."
+      }
+    ]
+  },
   "politica_confidentialitate": {
     "titlu": "Politica de confidențialitate",
     "sectiuni": [
