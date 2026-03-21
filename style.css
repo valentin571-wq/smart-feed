@@ -670,10 +670,11 @@ textarea{
   color:#020617;
 }
 
-/* range */
-.flatpickr-day.inRange{
-  background:rgba(56,189,248,.35);
-  color:#fff;
+/* intervalul dintre ele */
+.flatpickr-day.inRange {
+  background: rgba(212, 175, 55, 0.25) !important;
+  border-color: transparent !important;
+  color: #000 !important;
 }
 
 /* azi */
