@@ -187,7 +187,7 @@ if (config && paymentSelect) {
     if (nights < 1) return clearTotal();
 
    document.getElementById("nr_nopti").textContent =
-    nights + (nights === 1 ? " noapte" : " nopți");
+  "(" + nights + (nights === 1 ? " noapte)" : " nopți)");
 
     let total = config.prices[cameraKey] * nights;
 
