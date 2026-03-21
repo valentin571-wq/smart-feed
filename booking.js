@@ -52,6 +52,9 @@ if (config && paymentSelect) {
   function clearTotal() {
     totalSpan.textContent = "0";
     totalInput.value = "";
+
+   const nopti = document.getElementById("nr_nopti");
+  if (nopti) nopti.textContent = "";
   }
 
   function isBlocked(date) {
