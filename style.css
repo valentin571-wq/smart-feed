@@ -362,7 +362,7 @@ h2{
   max-height:85dvh; /* iOS 16+ */
   overflow-y:auto;
   -webkit-overflow-scrolling:touch;
-  border-radius:26px;
+  border-radius:15px;
   padding:20px;
   position:relative;
   display:flex;
