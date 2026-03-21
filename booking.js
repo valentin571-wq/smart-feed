@@ -504,6 +504,7 @@ function openPrivacy(){
   .then(r => r.json())
   .then(data => {
 
+   const policy = data.politica_anulare_rambursare;
     const policy = data.politica_confidentialitate;
 
     document.getElementById("privacyTitle").textContent = policy.titlu;
