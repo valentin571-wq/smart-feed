@@ -658,8 +658,10 @@ textarea{
 }
 
 /* hover */
-.flatpickr-day:hover{
-  background:rgba(56,189,248,.2);
+.flatpickr-day:hover {
+  background: #c9a227 !important;
+  border-color: #c9a227 !important;
+  color: #000 !important;
 }
 
 /* selectat */
