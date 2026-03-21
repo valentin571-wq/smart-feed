@@ -183,6 +183,9 @@ if (config && paymentSelect) {
     const nights = Math.round((endDate - startDate) / 86400000);
     if (nights < 1) return clearTotal();
 
+   document.getElementById("nr_nopti").textContent =
+    nights + (nights === 1 ? " noapte" : " nopți");
+
     let total = config.prices[cameraKey] * nights;
 
     if (mic.checked) {
