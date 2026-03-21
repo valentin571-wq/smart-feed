@@ -498,26 +498,23 @@ function closeTerms(){
   document.getElementById("termsPopup").style.display = "none";
 }
 
-function openPrivacy(){
+function openPolicy(type){
 
   fetch('https://valentin571-wq.github.io/smart-feed/confi.json')
   .then(r => r.json())
   .then(data => {
 
-   const policy = data.politica_anulare_rambursare;
-    const policy = data.politica_confidentialitate;
+    const policy = data[type];
 
     document.getElementById("privacyTitle").textContent = policy.titlu;
 
     let html = "";
 
     policy.sectiuni.forEach(sec => {
-
       html += `
         <h3>${sec.titlu}</h3>
         <p>${sec.continut}</p>
       `;
-
     });
 
     document.getElementById("privacyContent").innerHTML = html;
@@ -531,7 +528,6 @@ function openPrivacy(){
 function closePrivacy(){
   document.getElementById("privacyPopup").style.display = "none";
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
 
