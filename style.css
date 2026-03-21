@@ -761,6 +761,9 @@ textarea{
   border-radius:0 !important;
 }
 
+.flatpickr-calendar .flatpickr-day.selected {
+  background: #d4af37 !important;
+}
 
 /* ===== GALERIE ===== */
 .gallery {
