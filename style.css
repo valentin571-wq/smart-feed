@@ -666,7 +666,7 @@ textarea{
 .flatpickr-day.selected,
 .flatpickr-day.startRange,
 .flatpickr-day.endRange{
-  background:var(--accent);
+  background:#d4af37;
   color:#020617;
 }
 
