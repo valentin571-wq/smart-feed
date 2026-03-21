@@ -72,7 +72,7 @@ if (config && paymentSelect) {
     camera.options[0].disabled = false;
 
     if (nrAdulti === 1) enableRooms([1,2]);
-    else if (nrAdulti === 2) enableRooms([2,3]);
+    else if (nrAdulti === 2) enableRooms([2,3,4]);
     else if (nrAdulti >= 3) enableRooms([4]);
 
     if (camera.value && camera.querySelector(`option[value="${camera.value}"]`)?.disabled) {
