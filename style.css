@@ -642,7 +642,7 @@ textarea{
 /* săgeți */
 .flatpickr-prev-month,
 .flatpickr-next-month{
-  fill:var(--accent);
+  fill:#fff;;
 }
 
 /* zile săptămână */
@@ -661,7 +661,7 @@ textarea{
 .flatpickr-day:hover {
   background: #c9a227 !important;
   border-color: #c9a227 !important;
-  color: #000 !important;
+  color: #fff; !important;
 }
 
 /* selectat */
@@ -676,12 +676,12 @@ textarea{
 .flatpickr-day.inRange {
   background: rgba(212, 175, 55, 0.25) !important;
   border-color: transparent !important;
-  color: #000 !important;
+  color: #fff; !important;
 }
 
 /* azi */
 .flatpickr-day.today{
-  border:1px solid var(--accent);
+  border:1px solid #fff;;
 }
 
 /* dezactivate */
