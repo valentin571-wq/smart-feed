@@ -1,0 +1,128 @@
+{
+  "servire": {
+    "keywords": ["ospatar", "ospatara", "servire", "servirea", "nervos", "nepoliticos", "arogant", "ignor", "nu ne-a bagat in seama", "nu vine", "nu raspunde", "ton", "comportament"],
+    "problema": "servire slabă",
+    "actiuni": [
+      "discută cu ospătarul responsabil",
+      "verifică comportamentul în tură",
+      "monitorizează interacțiunile cu clienții"
+    ]
+  },
+  "asteptare": {
+    "keywords": ["astept", "asteptat", "asteptare", "intarziere", "intarziat", "durat", "mult timp", "prea mult", "lent", "incet", "nu venea", "timp mare"],
+    "problema": "servire lentă",
+    "actiuni": [
+      "verifică timpii de servire",
+      "analizează fluxul bucătărie",
+      "suplimentează personalul la ore de vârf"
+    ]
+  },
+  "livrare_intarziata": {
+    "keywords": ["livrare", "livrator", "curier", "glovo", "tazz", "bolt", "intarziata", "a ajuns tarziu", "a venit tarziu", "livrare lenta"],
+    "problema": "livrare întârziată",
+    "actiuni": [
+      "verifică timpul de pregătire al comenzilor",
+      "verifică colaborarea cu livratorii",
+      "optimizează timpul de predare către curier"
+    ]
+  },
+  "mancare": {
+    "keywords": ["mancare", "mancarea", "gust", "fara gust", "naspa", "oribila", "proasta", "necomestibila"],
+    "problema": "calitate slabă a mâncării",
+    "actiuni": [
+      "verifică rețeta și prepararea",
+      "discută cu bucătarul",
+      "verifică ingredientele folosite"
+    ]
+  },
+  "temperatura_mancare": {
+    "keywords": ["rece", "recea", "rece mancarea", "fierbinte", "ars", "arsa", "rece livrare", "rece acasa"],
+    "problema": "temperatură necorespunzătoare a mâncării",
+    "actiuni": [
+      "verifică timpul între preparare și livrare",
+      "folosește ambalaje termice",
+      "optimizează predarea către curier"
+    ]
+  },
+  "ambalare": {
+    "keywords": ["ambalaj", "ambalare", "cutie", "punga rupta", "varsat", "scurs", "curgea", "desfacut", "stricat ambalaj"],
+    "problema": "ambalare necorespunzătoare",
+    "actiuni": [
+      "verifică tipul de ambalaj folosit",
+      "asigură sigilarea corectă",
+      "testează rezistența la transport"
+    ]
+  },
+  "comanda_gresita": {
+    "keywords": ["gresit", "greșit", "alta comanda", "nu asta am comandat", "incurcat", "confuzie", "comanda gresita", "lipsea", "nu a venit"],
+    "problema": "comandă greșită sau incompletă",
+    "actiuni": [
+      "verifică comanda înainte de livrare",
+      "introdu un sistem de verificare dublă",
+      "discută cu personalul responsabil"
+    ]
+  },
+  "curatenie": {
+    "keywords": ["murdar", "murdara", "lipicios", "jeg", "necurat", "praf", "toaleta", "wc", "miros"],
+    "problema": "curățenie necorespunzătoare",
+    "actiuni": [
+      "verifică zona menționată",
+      "refă curățenia imediat",
+      "revizuiește procedurile de curățenie"
+    ]
+  },
+  "pret": {
+    "keywords": ["scump", "pret", "prea scump", "cost", "mult prea mult", "nu merita", "nu se merita", "overpriced"],
+    "problema": "preț perceput ca prea mare",
+    "actiuni": [
+      "analizează raportul preț-calitate",
+      "compară cu concurența",
+      "revizuiește prețurile"
+    ]
+  },
+  "portii": {
+    "keywords": ["portie mica", "portii mici", "putin", "cantitate mica", "nu m-am saturat", "mic"],
+    "problema": "porții prea mici",
+    "actiuni": [
+      "verifică gramajele",
+      "compară cu standardul",
+      "ajustează cantitățile"
+    ]
+  },
+  "bauturi": {
+    "keywords": ["bautura", "suc", "apa", "bere", "vin", "calda", "fara acid", "plata"],
+    "problema": "problemă la băuturi",
+    "actiuni": [
+      "verifică stocul",
+      "verifică temperatura",
+      "verifică termenul de valabilitate"
+    ]
+  },
+  "zgomot": {
+    "keywords": ["zgomot", "galagie", "prea tare", "muzica tare"],
+    "problema": "nivel ridicat de zgomot",
+    "actiuni": [
+      "reduce volumul muzicii",
+      "optimizează ambientul",
+      "reorganizează mesele"
+    ]
+  },
+  "rezervare": {
+    "keywords": ["rezervare", "masa rezervata", "nu aveau masa", "nu exista rezervarea"],
+    "problema": "problemă la rezervare",
+    "actiuni": [
+      "verifică sistemul de rezervări",
+      "confirmă rezervările",
+      "instruieste personalul"
+    ]
+  },
+  "plata": {
+    "keywords": ["plata", "bon", "nota", "nu mergea pos", "card", "cash", "rest"],
+    "problema": "problemă la plată",
+    "actiuni": [
+      "verifică POS-ul",
+      "verifică bonurile",
+      "instruieste personalul"
+    ]
+  }
+}
